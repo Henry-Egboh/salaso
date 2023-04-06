@@ -1,13 +1,190 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700&display=swap');
+
+* {
+    font-family: 'Maven Pro', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --white: #fff;
+  --background-color: hsla(120, 1%, 32%, 0.2);
+  --link-color: #2f2f25;
+  --green-color: rgb(21, 110, 21);
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+.row-1 {
+  background-color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4rem 1rem 2rem;
+}
+
+.pro-img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+.flex-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1.6rem;
+}
+
+.flex-1 {
+  letter-spacing: 2px;
+}
+
+.row-2 {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 0rem 4rem;
+}
+
+.aside {
+  background-color: var(--white);
+}
+
+.aside ul {
+  list-style: none;
+}
+
+.aside ul li a {
+  text-decoration: none;
+  color: var(--link-color);
+  display: block;
+  padding: 1rem 0rem;
+}
+
+.aside ul li a:hover {
+  color: var(--green-color);
+  transition: all 1000ms ease-in-out;
+}
+
+.grid-3 {
+  display: grid;
+  margin-right: 4rem;
+  /* row-gap: 2rem; */
+}
+
+.activity-video {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 2rem;
+}
+
+.activity {
+  /* background-color: var(--white); */
+  display: grid;
+  gap: 1rem 0rem;
+}
+
+.activity > div, .condition-lastActivity > div, .row-3 > div {
+  border-radius: 0.6rem;
+}
+
+.video {
+  background-color: var(--white);
+  border-radius: 0.6rem;
+}
+
+.player-wrapper {
+  position: relative;
+  padding-top: 56.25%; /* Player ratio: 100 / (1280 / 720) */
+}
+
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.tables {
+  background-color: var(--white);
+  /* width: 100%; */
+  border-radius: 0.6rem;
+  margin-right: 4rem;
+}
+.table-wrapper {
+  padding: 4rem;
+}
+
+.table-content {
+  width: 100%;
+  padding: 2rem;
+}
+
+.table-content th, .table-content td {
+  border-bottom: 2px groove var(--background-color);
+  padding: 1.5rem 0rem;
+}
+
+.basic-info {
+  background-color: var(--white);
+  padding: 2rem;
+}
+
+.basic-info-cards-container {
+  background-color: var(--white);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  
+}
+
+.basic-info-cards {
+  background-color: var(--background-color);
+  padding: 0.2rem 0rem 0.2rem 0.8rem;
+}
+
+.basic-info-cards p {
+    margin-bottom: 0rem;
+}
+
+.asset-entry {
+  padding: 2rem;
+}
+
+.asset-entry h4 {
+  margin-bottom: 0rem;
+}
+
+.facentos {
+  margin-left: 7rem;
+}
+
+.green-ball-big {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: var(--green-color);
+}
+
+.green-ball-small {
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  background-color: var(--green-color);
+}
+
+.row-3 {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 0rem 4rem;
+  margin: 2rem 0rem 0rem;
+}
+
+.row-4 {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 0rem 4rem;
+  margin: 2rem 0rem 0rem;
 }
